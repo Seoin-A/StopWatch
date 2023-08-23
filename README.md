@@ -21,6 +21,7 @@
 
 ### BackgrounndThread 
   - 복잡한 연산이나, 네트워크 작업, 데이터 작업 수행
+  <img src="https://github.com/Seoin-A/StopWatch/assets/129828463/142385af-8fca-42fa-8300-a88fc020255a" width="700" height="400"/>
 
 
 
