@@ -21,7 +21,28 @@
 
 ### BackgrounndThread 
   - 복잡한 연산이나, 네트워크 작업, 데이터 작업 수행
-  <img src="https://github.com/Seoin-A/StopWatch/assets/129828463/142385af-8fca-42fa-8300-a88fc020255a" width="700" height="150"/>
+    
+     <img src="https://github.com/Seoin-A/StopWatch/assets/129828463/9cf1755f-5317-4402-a73a-7a8e1bf75824" width="700" height="300"/>
+
+  Action.java
+   ```Java
+    public final void runOnUiThread(Runnable action){
+        if(Thread.currentThread() != mUiTHread) {
+            mHandler.post(action)
+        } else {
+            action.run()
+        }
+    }
+   ```
+
+
+
+
+
+
+
+
+  
 
 
 
