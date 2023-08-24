@@ -20,5 +20,12 @@
 </details>
 
 
+## Development Environment
+- Android Studio Giraffe
+
+## Application Version
+- minSdkVersion : API 26
+
+
 
 
