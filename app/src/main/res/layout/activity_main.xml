@@ -15,8 +15,8 @@
 
         android:textSize="36sp"
 
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="190dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_second"
+        tools:layout_editor_absoluteX="132dp" />
 
     <TextView
         android:id="@+id/tv_second"
@@ -31,7 +31,6 @@
         tools:layout_editor_absoluteX="181dp" />
 
 
-
     <TextView
         android:id="@+id/tv_minute"
         android:layout_width="wrap_content"
@@ -40,8 +39,8 @@
 
         android:textSize="30sp"
 
-        tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="198dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_second"
+        tools:layout_editor_absoluteX="247dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
