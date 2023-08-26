@@ -14,6 +14,8 @@
                  : Button, EditText와 같은 UI위젯을 사용한 사용자 이벤트와 UI 드로잉 이벤트 담당
     
     - BackgrounndThread : 복잡한 연산이나, 네트워크 작업, 데이터 작업 수행
+
+    - chain : 뷰 사이의 여백을 수직 혹은 수평 방향으로 균등하게 분배할 수 있다.
     
 <img src="https://github.com/Seoin-A/StopWatch/assets/129828463/142385af-8fca-42fa-8300-a88fc020255a" width="700" height="150"/>
 
