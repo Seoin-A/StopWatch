@@ -7,7 +7,6 @@
     tools:context=".MainActivity">
 
 
-    
     <TextView
         android:id="@+id/tv_millisecond"
         android:layout_width="wrap_content"
@@ -50,19 +49,28 @@
 
 
     <Button
-        android:layout_width="80dp"
+        android:id="@+id/button"
+        android:layout_width="90dp"
         android:layout_height="60dp"
+        android:backgroundTint="#EF0F38"
+        android:text="@string/start"
 
-        TEXT
-        android:text="시작"
-        android:backgroundTint="#550379"
-        />
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:layout_width="80dp"
+        android:layout_width="90dp"
         android:layout_height="60dp"
-        android:text="초기화"
-        android:backgroundTint="#FFEB3B"
+
+        android:backgroundTint="#231CF5"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="50dp"
         />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
