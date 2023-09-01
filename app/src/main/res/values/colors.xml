@@ -4,7 +4,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="btn_start">#7C4DFF</color>
-    <color name="btn_restart">#EEEE9B</color>
+    <color name="btn_refresh">#EEEE9B</color>
     <color name="btn_pause">#F9988A</color>
 
 </resources>
