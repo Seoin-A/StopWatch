@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         btn_start = findViewById(R.id.btn_start)
         btn_refresh = findViewById(R.id.btn_refresh)
         tv_minute = findViewById(R.id.tv_minute)
@@ -68,9 +67,14 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
             val second = (time % 6000) / 100
             val minute = time / 6000
 
-            tv_millisecond.text = if(milli_second <10 ) ".0${milli_second}" else ".${milli_second}"
-            tv_second.text =if(second < 10) "0${second}" else ".${second}"
-            tv_minute.text = "${minute}"
+            runOnUiThread {
+                tv_millisecond.text = if(milli_second <10 ) ".0${milli_second}" else ".${milli_second}"
+                tv_second.text =if(second < 10) ":0${second}" else ".${second}"
+                tv_minute.text = "${minute}"
+            }
+
+            // Sam 변환 : 자바로 작성된 메소드가 하나인 인터페이스를 구현할 때, 함수를 인수로 전달할 수 있다.
+
         }
     }
 
