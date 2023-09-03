@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
     }
 
     private fun start(){
-        btn_start.text = getString(R.string.start)
+        btn_start.text = getString(R.string.btn_pause)
         btn_start.setBackgroundColor(getColor(R.color.btn_pause))
         isRunning = true
 
@@ -69,9 +69,11 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
             val minute = time / 6000
 
             runOnUiThread {
-                tv_millisecond.text = if(milli_second <10 ) ".0${milli_second}" else ".${milli_second}"
-                tv_second.text =if(second < 10) ":0${second}" else ":${second}"
-                tv_minute.text = "${minute}"
+                if(isRunning) {
+                    tv_millisecond.text = if (milli_second < 10) ".0${milli_second}" else ".${milli_second}"
+                    tv_second.text = if (second < 10) ":0${second}" else ":${second}"
+                    tv_minute.text = "${minute}"
+                }
             }
             // background Thread에서는 UI 자원에 접근할 수 없다 !!
 
@@ -89,7 +91,15 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
     }
 
     private fun refresh(){
+        timer?.cancel()
+        btn_start.text = getString(R.string.start)
+        btn_start.setBackgroundColor(getColor(R.color.btn_start))
 
+        isRunning = false
+        time = 0;
+        tv_millisecond.text = ".00"
+        tv_second.text = ":00"
+        tv_minute.text = "00"
     }
 
 
