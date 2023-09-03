@@ -61,6 +61,7 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
         timer = timer(period = 10){
             // 1000ms = 1s
             // 0.01 time 1++
+            // timer 는 background Thread 에서 실행된다.
             time++
 
             val milli_second = time % 100
@@ -69,9 +70,10 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
 
             runOnUiThread {
                 tv_millisecond.text = if(milli_second <10 ) ".0${milli_second}" else ".${milli_second}"
-                tv_second.text =if(second < 10) ":0${second}" else ".${second}"
+                tv_second.text =if(second < 10) ":0${second}" else ":${second}"
                 tv_minute.text = "${minute}"
             }
+            // background Thread에서는 UI 자원에 접근할 수 없다 !!
 
             // Sam 변환 : 자바로 작성된 메소드가 하나인 인터페이스를 구현할 때, 함수를 인수로 전달할 수 있다.
 
@@ -79,7 +81,11 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
     }
 
     private fun pause(){
+        btn_start.text = getString(R.string.start)
+        btn_start.setBackgroundColor(getColor(R.color.btn_start))
 
+        isRunning = false
+        timer?.cancel()
     }
 
     private fun refresh(){
