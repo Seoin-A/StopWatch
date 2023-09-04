@@ -62,7 +62,7 @@
         android:layout_marginBottom="100dp"
         android:backgroundTint="@color/btn_start"
 
-        android:text="@string/btn_start"
+        android:text="@string/btn_start_eng"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -74,7 +74,7 @@
 
         android:layout_marginBottom="50dp"
         android:backgroundTint="@color/btn_refresh"
-        android:text="@string/btn_reset"
+        android:text="@string/btn_reset_eng"
         app:layout_constraintBottom_toTopOf="@+id/btn_start"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

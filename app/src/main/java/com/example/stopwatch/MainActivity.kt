@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
     }
 
     private fun pause(){
-        btn_start.text = getString(R.string.start)
+        btn_start.text = getString(R.string.btn_start)
         btn_start.setBackgroundColor(getColor(R.color.btn_start))
 
         isRunning = false
@@ -92,7 +92,7 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
 
     private fun refresh(){
         timer?.cancel()
-        btn_start.text = getString(R.string.start)
+        btn_start.text = getString(R.string.btn_start)
         btn_start.setBackgroundColor(getColor(R.color.btn_start))
 
         isRunning = false
