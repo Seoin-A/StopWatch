@@ -95,6 +95,8 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
         btn_start.text = getString(R.string.btn_start)
         btn_start.setBackgroundColor(getColor(R.color.btn_start))
 
+
+
         isRunning = false
         time = 0;
         tv_millisecond.text = ".00"
