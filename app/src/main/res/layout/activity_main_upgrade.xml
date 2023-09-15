@@ -57,25 +57,35 @@
 
     <Button
         android:id="@+id/btn_start"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="60dp"
         android:background="@drawable/btn_blue"
+        android:layout_margin="10dp"
 
         android:text="@string/btn_start_eng"
-        tools:layout_editor_absoluteX="323dp"
-        tools:layout_editor_absoluteY="571dp" />
+        android:textAllCaps="false"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_refresh"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_refresh"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="60dp"
 
-        android:backgroundTint="@color/btn_refresh"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_black"
+
         android:text="@string/btn_reset_eng"
-        tools:layout_editor_absoluteX="323dp"
-        tools:layout_editor_absoluteY="461dp" />
+        android:textColor="@color/white"
+        android:textAllCaps="false"
 
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_start" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
