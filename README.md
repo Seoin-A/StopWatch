@@ -29,5 +29,30 @@
 - minSdkVersion : API 26
 
 
+## Wrap-up
+1) Thread
+- 한 프로세스 내에서 실행되는 흐름의 단위  
+- 백그라운드 스레드에서는 시간이 걸리는 일을 처리  
+- UI 관련 작업은 메인 스레드에서만 가능
+
+2) Baseline
+<details>
+  <summary></summary>
+  
+![image](https://github.com/Seoin-A/StopWatch/assets/129828463/db78b898-c663-48e9-a3a4-06cb3abc7bd9)      
+</details>   
+<br>
+
+      
+4) Chain
+<details>
+   <summary></summary>
+   
+![image](https://github.com/Seoin-A/StopWatch/assets/129828463/9513e4ef-66ed-48fd-a6dd-af10abfea632)
+
+</details>
+
+  
+
 
 
