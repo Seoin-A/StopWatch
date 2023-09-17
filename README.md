@@ -36,22 +36,23 @@
 - UI 관련 작업은 메인 스레드에서만 가능
 
 2) Baseline
-<details>
-  <summary></summary>
-  
-![image](https://github.com/Seoin-A/StopWatch/assets/129828463/db78b898-c663-48e9-a3a4-06cb3abc7bd9)      
-</details>   
-<br>
-
+    <details>
+      <summary></summary>
       
-4) Chain
-<details>
-   <summary></summary>
-   
-![image](https://github.com/Seoin-A/StopWatch/assets/129828463/9513e4ef-66ed-48fd-a6dd-af10abfea632)
+    ![image](https://github.com/Seoin-A/StopWatch/assets/129828463/db78b898-c663-48e9-a3a4-06cb3abc7bd9)      
+    </details>   
+<br>
+     
+3) Chain
+    <details>
+       <summary></summary>
+       
+    ![image](https://github.com/Seoin-A/StopWatch/assets/129828463/9513e4ef-66ed-48fd-a6dd-af10abfea632)
+    
+    </details>
 
-</details>
-
+4) Resource 파일
+    - Color.xml, String.xml을 사용하면 색상과 문자열을 재활용할 수 있다.
   
 
 
