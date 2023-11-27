@@ -1,4 +1,4 @@
-# StopWatch  
+# StopWatch(END)
 
 ## Basic knowledge
 <details> 
